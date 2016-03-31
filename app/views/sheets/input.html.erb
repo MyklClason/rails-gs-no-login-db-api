@@ -1,0 +1,11 @@
+<h1>Data Input Form</h1>
+
+<%= form_tag(output_path, method: "get") do |f| %>
+  <%= label_tag :url, "Published Google Sheet: " %>
+  <%= text_field_tag :url, nil, placeholder: "URL", required: true %> <br>
+  <%= label_tag :name, "Column Number for: " %>
+  <%= text_field_tag :name, nil, placeholder: "Name", required: true %> <br>
+  <%= label_tag :best_friend, "Column Number for: " %>
+  <%= text_field_tag :best_friend, nil, placeholder: "Best Friend", required: true %> <br>
+  <%= submit_tag "Compute friends of friends" %>
+<% end %>

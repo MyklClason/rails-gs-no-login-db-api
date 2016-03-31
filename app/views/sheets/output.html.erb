@@ -1,0 +1,13 @@
+<h1>Best Friends</h1>
+
+<% @best_friends.keys.each do |name| %>
+  <h3>Best Friends of <%= name %></h3>
+  <ul>
+    |
+    <% @best_friends[name].each do |best_friend| %>
+      <li style="display:inline"><%= best_friend %></li> |
+    <% end %>
+  </ul>
+<% end %>
+
+
